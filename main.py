@@ -18,12 +18,10 @@ def take_commands():
   
     return Query
     
-
 def Speak(audio):
     engine = pyttsx3.init()
     engine.say(audio)
     engine.runAndWait()
-
 
 # Driver Code
 if __name__ == '__main__':
@@ -34,8 +32,8 @@ if __name__ == '__main__':
             Speak("Sure master! as your wish")
             break
         if "What is your name" in command:
-            Speak("Hello master, my name is Jarvis")
+            Speak("Hello master, my name is Piyush")
         if "Are you a bot?" in command:
             Speak("I am an automated ai machine made by miss Aindrila.I act based on your command. I am a quick learner.")
         if "How are you feeling today?" in command:
-            Speak("I am happy as a happy Jarvis")
+            Speak("I am happy as a happy Piyush")
